@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Minerva</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+              display: ['"Outfit"', 'sans-serif'],
+              mono: ['"JetBrains Mono"', 'monospace'],
+            },
+            colors: {
+              md: {
+                sys: {
+                  color: {
+                    primary: '#D0BCFF',
+                    onPrimary: '#381E72',
+                    primaryContainer: '#4F378B',
+                    onPrimaryContainer: '#EADDFF',
+                    secondary: '#CCC2DC',
+                    onSecondary: '#332D41',
+                    secondaryContainer: '#4A4458',
+                    onSecondaryContainer: '#E8DEF8',
+                    tertiary: '#EFB8C8',
+                    onTertiary: '#492532',
+                    tertiaryContainer: '#633B48',
+                    onTertiaryContainer: '#FFD8E4',
+                    background: '#141218',
+                    onBackground: '#E6E1E5',
+                    surface: '#141218',
+                    onSurface: '#E6E1E5',
+                    surfaceVariant: '#49454F',
+                    onSurfaceVariant: '#CAC4D0',
+                    outline: '#938F99',
+                    surfaceContainerLow: '#1D1B20',
+                    surfaceContainer: '#211F26',
+                    surfaceContainerHigh: '#2B2930',
+                    surfaceContainerHighest: '#36343B',
+                  }
+                }
+              }
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out forwards',
+              'slide-up': 'slideUp 0.4s cubic-bezier(0.2, 0.0, 0, 1.0) forwards',
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              slideUp: {
+                '0%': { transform: 'translateY(20px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #141218;
+        color: #E6E1E5;
+        overscroll-behavior-y: none; /* Prevent rubber-banding on mobile */
+      }
+      /* Custom Scrollbar for Webkit */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #49454F;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #938F99;
+      }
+      
+      .prose pre {
+        background-color: #1D1B20 !important;
+        border-radius: 1rem;
+        border: 1px solid #49454F;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-markdown": "https://aistudiocdn.com/react-markdown@^10.1.0",
+    "react-syntax-highlighter/": "https://aistudiocdn.com/react-syntax-highlighter@^16.1.0/",
+    "react-syntax-highlighter": "https://aistudiocdn.com/react-syntax-highlighter@^16.1.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
